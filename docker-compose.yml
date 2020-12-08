@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webapp_azuredevops:
+    image: ${DOCKER_REGISTRY-}webappazuredevops
+    build:
+      context: .\WebApp_AzureDevOps
+      dockerfile: Dockerfile
